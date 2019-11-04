@@ -12,7 +12,7 @@ data "terraform_remote_state" "ops-okta-app" {
 resource "null_resource" "timed-hello" {
   triggers = { timey = "${timestamp()}" }
   provisioner "local-exec" {
-    command = "echo Time is ${timestamp()}, env var 'tfe_token' value is $tfe_token"
+    command = "echo Time is ${timestamp()}, env var 'TFETOKEN' value is $TFETOKEN"
   }
 }
 
