@@ -2,7 +2,7 @@ data "terraform_remote_state" "ops-okta-app" {
   backend = "remote"
 
   config = {
-    organization = "galser-paid"
+    organization = "galser-paid-nonexisting"
     workspaces = {
       name = "tfe-var-test"
     }
