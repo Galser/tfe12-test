@@ -3,6 +3,7 @@ data "terraform_remote_state" "ops-okta-app" {
 
   config = {
     organization = "digital-lightning"
+    
     workspaces = {
       name = "dl-ops-security"
     }
