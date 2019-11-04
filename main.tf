@@ -2,9 +2,9 @@ data "terraform_remote_state" "ops-okta-app" {
   backend = "remote"
 
   config = {
-    organization = "galser-paid"
+    organization = "digital-lightning"
     workspaces = {
-      name = "tfe-var-test"
+      name = "dl-ops-security"
     }
   }
 }

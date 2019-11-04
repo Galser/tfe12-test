@@ -1,4 +1,4 @@
 variable "hostname" {
-	default = "app.terffaform.io"
+  default = "app.terffaform.io"
 }
 
