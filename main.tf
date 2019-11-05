@@ -30,8 +30,8 @@ output "tfe_token" {
 
 
 # Configure the Terraform Enterprise Provider
-provider "tfe" {
-  hostname = "${var.hostname}"
-  token    = "${var.tfe_token}"
-}
+#provider "tfe" {
+#  hostname = "${var.hostname}"
+#  token    = "${var.tfe_token}"
+#}
 
