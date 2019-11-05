@@ -1,3 +1,5 @@
+variable "dl-token" {}
+
 data "terraform_remote_state" "ops-okta-app" {
   backend = "remote"
 
