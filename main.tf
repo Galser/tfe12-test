@@ -3,7 +3,8 @@ data "terraform_remote_state" "ops-okta-app" {
 
   config = {
     organization = "digital-lightning"
-    hostname     = "ptfe-pm-2.guselietov.com" 
+    hostname     = "ptfe-pm-2.guselietov.com"
+		token				 = "${var.dl-token}"
     workspaces = {
       name = "dl-ops-security"
     }
